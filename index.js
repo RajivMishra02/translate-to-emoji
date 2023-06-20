@@ -1,0 +1,77 @@
+function translateToEmoji(text) {
+  const emojiMap = {
+    happy: '😄',
+    sad: '😢',
+    love: '❤️',
+    cat: '🐱',
+    dog: '🐶',
+    fish: '🐠',
+    coffee: '☕️',
+    pizza: '🍕',
+    guitar: '🎸',
+    book: '📚',
+    sun: '☀️',
+    moon: '🌙',
+    star: '⭐️',
+    thumbsUp: '👍',
+    thumbsDown: '👎',
+    fire: '🔥',
+    heartEyes: '😍',
+    laughing: '😂',
+    sunglasses: '😎',
+    robot: '🤖',
+    rose: '🌹',
+    rainbow: '🌈',
+    lightning: '⚡️',
+    cookie: '🍪',
+    rocket: '🚀',
+    snowflake: '❄️',
+    bird: '🐦',
+    panda: '🐼',
+    elephant: '🐘',
+    monkey: '🐵',
+    alien: '👽',
+    hello: '👋',
+    awesome: '🤩',
+    coding: '💻',
+    party: '🎉',
+    success: '🎊',
+    magic: '🔮',
+    unicorn: '🦄',
+    coffee: '☕️',
+    music: '🎵',
+    pizza: '🍕',
+    rocket: '🚀',
+    heart: '❤️',
+    love: '❤️🧡💛💚💙💜🖤',
+    smile: '😊🙂😃😄😁😆',
+    laugh: '😂🤣😆😅🤭😄',
+    cry: '😢😭😿😥😔😞',
+    cool: '😎🕶️🆒❄️🌬️',
+    celebrate: '🎉🎊🎈🥳🎆🎇',
+    success: '🎉🏆✨🌟🙌🥇',
+    party: '🎉🥳🎈🎊🍾🎂',
+    food: '🍕🍔🍟🌮🍣🥗',
+    nature: '🌿🌳🌼🌸🌻🌺',
+    travel: '✈️🌍🏞️🗺️🚀🚁',
+    sports: '⚽🏀🏈🎾🏐🥊',
+    music: '🎵🎶🎤🎸🎹🎧',
+    art: '🎨✏️🖌️🖼️🎭🎬',
+    movie: '🎥🍿🎞️🎬🎦📽️',
+    gaming: '🎮🕹️🎲🃏🔫👾',
+    shopping: '🛍️💳💰👜👠🛒',
+    sleep: '😴🛌💤🌙🌝💫',
+    work: '💼👔👩‍💻👨‍💼📊📚',
+    study: '📚✏️🎓📖🎒🧠',
+    relax: '🌴⛱️🍹😌🧘‍♀️🛀'
+  };
+
+  const translatedText = text.replace(/\b(\w+)\b/g, match => {
+    const emoji = emojiMap[match.toLowerCase()];
+    return emoji ? emoji : match;
+  });
+
+  return translatedText;
+}
+
+module.exports = translateToEmoji;
