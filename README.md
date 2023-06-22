@@ -21,10 +21,16 @@ Steps:
     `const translatedText1 = translateToEmoji(text1);`<br>
     `console.log(translatedText1);`
 
+    Output:
+    `I am feeling 😄 today!`
+
 
     `const text2 = 'I love cats, dogs, and fish.';`<br>
     `const translatedText2 = translateToEmoji(text2);`<br>
     `console.log(translatedText2);`
+
+     Output:
+     `I love 🐱, 🐶 and 🐠.`
 
 This example code converts your entered texts into the translated emojis.
 # translate-to-emoji
