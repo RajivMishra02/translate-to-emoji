@@ -9,21 +9,22 @@ Have a look into the process:
 Steps:
 
 1. Install the npm package into your code
+
     `npm install translate-to-emoji`
 
-2. Use the package in your code.
+3. Use the package in your code.
     For example:
 
-    `const translateToEmoji = require('./index.js');
+    `const translateToEmoji = require('./index.js');`
 
-    const text1 = 'I am feeling happy today!';
-    const translatedText1 = translateToEmoji(text1);
-    console.log(translatedText1); `
+    `const text1 = 'I am feeling happy today!';`
+    `const translatedText1 = translateToEmoji(text1);`
+    `console.log(translatedText1);`
 
 
-    `const text2 = 'I love cats, dogs, and fish.';
-    const translatedText2 = translateToEmoji(text2);
-    console.log(translatedText2); `
+    `const text2 = 'I love cats, dogs, and fish.';`
+    `const translatedText2 = translateToEmoji(text2);`
+    `console.log(translatedText2);`
 
 This example code converts your entered texts into the translated emojis.
 # translate-to-emoji
