@@ -18,12 +18,12 @@ Steps:
     `const translateToEmoji = require('./index.js');`
 
     `const text1 = 'I am feeling happy today!';`<br>
-    `const translatedText1 = translateToEmoji(text1);`
+    `const translatedText1 = translateToEmoji(text1);`<br>
     `console.log(translatedText1);`
 
 
     `const text2 = 'I love cats, dogs, and fish.';`<br>
-    `const translatedText2 = translateToEmoji(text2);`
+    `const translatedText2 = translateToEmoji(text2);`<br>
     `console.log(translatedText2);`
 
 This example code converts your entered texts into the translated emojis.
