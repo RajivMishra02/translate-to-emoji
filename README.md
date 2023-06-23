@@ -11,7 +11,7 @@ Convert your text to emojis!!
 ## Usage
 
 ```js
-const translateToEmoji = require('./index.js');
+import translateToEmoji from 'translate-to-emoji';
 
 const text1 = 'I am feeling happy today!';
 const translatedText1 = translateToEmoji(text1);
